@@ -1,39 +1,39 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>My Calculator</title>
+    <meta charset="UTF-8">
+    <title>Modern Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="calculator">
       <input type="text" id="display" readonly />
-
-      <div class="btn">
-        <button onclick="back()">⌫</button>
-        <button onclick="clearAll()">C</button>
-        <button onclick="add('%')">%</button>
-        <button onclick="add('/')">/</button>
+      <div class="btn-grid">
+        <button onclick="back()" class="btn-func">⌫</button>
+        <button onclick="clearAll()" class="btn-func">C</button>
+        <button onclick="add('%')" class="btn-op">%</button>
+        <button onclick="add('/')" class="btn-op">÷</button>
 
         <button onclick="add('7')">7</button>
         <button onclick="add('8')">8</button>
         <button onclick="add('9')">9</button>
-        <button onclick="add('*')">*</button>
+        <button onclick="add('*')" class="btn-op">×</button>
 
         <button onclick="add('4')">4</button>
         <button onclick="add('5')">5</button>
         <button onclick="add('6')">6</button>
-        <button onclick="add('-')">-</button>
+        <button onclick="add('-')" class="btn-op">-</button>
 
         <button onclick="add('1')">1</button>
         <button onclick="add('2')">2</button>
         <button onclick="add('3')">3</button>
-        <button onclick="add('+')">+</button>
+        <button onclick="add('+')" class="btn-op">+</button>
 
-        <button onclick="add('0')" class="zero">0</button>
-        <button onclick="result()">=</button>
+        <button onclick="add('0')" class="btn-zero">0</button>
+        <button onclick="add('.')">.</button>
+        <button onclick="result()" class="btn-equal">=</button>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
